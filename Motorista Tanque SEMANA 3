@@ -1,0 +1,6 @@
+preco_do_litro = float(input("Digite o preço do litro da gasolina (em R$): "))
+valor_pago = float(input("Digite o valor pago (em R$): "))
+
+litros_colocados = valor_pago / preco_do_litro
+
+print(f"O motorista conseguiu colocar {litros_colocados:.2f} litros de gasolina.")

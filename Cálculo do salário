@@ -1,0 +1,8 @@
+total_de_horas_trabalhadas = float(input("Digite o total de horas trabalhadas no mês: "))
+
+salario = total_de_horas_trabalhadas * 35
+
+if salario < 1000:
+    salario += 300  # Aumento de R$300,00
+
+print(f"O salário final do funcionário é: R${salario:.2f}")

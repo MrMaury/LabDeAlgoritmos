@@ -1,0 +1,8 @@
+numero_de_cavalos = int(input("Digite o número de cavalos no haras: "))
+
+valor_ferradura = 80
+ferraduras_por_cavalo = 4
+
+valor_total = numero_de_cavalos * ferraduras_por_cavalo * valor_ferradura
+
+print(f"O valor total para trocar as ferraduras dos cavalos é: R${valor_total:.2f

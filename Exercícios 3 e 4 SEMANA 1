@@ -1,0 +1,18 @@
+ano_nascimento = int(input("Digite o ano de nascimento: "))
+
+ano_atual = 2025 
+
+idade = ano_atual - ano_nascimento
+
+print(f"A pessoa tem/fará {idade} anos neste ano.")
+
+#segundo exercício
+
+numero_de_carros = int(input("Digite o número de carros na frota: "))
+
+preco_pneu = 395.40
+pneus_por_carro = 4
+
+valor_total = numero_de_carros * pneus_por_carro * preco_pneu
+
+print(f"O valor total para trocar os pneus da frota é: R${valor_total:.2f}")

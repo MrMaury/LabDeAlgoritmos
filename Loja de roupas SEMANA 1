@@ -1,0 +1,15 @@
+preco_fabrica = float(input("Digite o preço de fábrica da peça (em R$): "))
+
+aumento = 0.30 * preco_fabrica
+preco_final = preco_fabrica + aumento
+
+print(f"O valor final da peça é: R${preco_final:.2f}")
+
+#segundo exercício
+numero = float(input("Digite um número: "))
+
+dobro = numero * 2
+metade = numero / 2
+
+print(f"O dobro de {numero} é {dobro}")
+print(f"A metade de {numero} é {metade}")

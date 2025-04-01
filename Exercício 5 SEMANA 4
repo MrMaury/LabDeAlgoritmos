@@ -1,0 +1,32 @@
+qtdsim = 0
+
+print ("RESPONDA SIM OU NÃO PARA AS SEGUINTES PERGUNTAS:\n")
+resposta = (input("Telefonou para a vítima?")).upper()
+if resposta == "SIM":
+    qtdsim = qtdsim + 1
+
+resposta = (input("Esteve no local do crime?")).upper()
+if resposta == "SIM":
+    qtdsim = qtdsim + 1
+
+resposta = (input("Mora perto da vítima?")).upper()
+if resposta == "SIM":
+    qtdsim = qtdsim + 1
+
+resposta = (input("Devia para a vítima?")).upper()
+if resposta == "SIM":
+    qtdsim = qtdsim + 1
+
+resposta = (input("ja trabalhou com a vítima?")).upper()
+if resposta == "SIM":
+    qtdsim = qtdsim + 1
+
+
+if qtdsim == 2:
+    print ("Suspeito")
+elif qtdsim == 3 or qtdsim == 4:
+    print ("Cúmplice")
+elif qtdsim == 5:
+    print ("Assassino")
+else:
+    print ("Inocente")

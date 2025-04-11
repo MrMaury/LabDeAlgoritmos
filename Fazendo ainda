@@ -1,0 +1,34 @@
+totalidade = 0
+totalaltura = 0
+quantidade = 0
+opcao = 0
+
+while opcao != 3:
+    print("\nMENU")
+    print("1 - Cadastrar pessoa:")
+    print("2 - Mostrar media parcial de altura e idade")
+    print("3 - Sair")
+    opcao = int(input("Escolha uma opção:"))
+
+if opcao == 1:
+    idade = int(input("Digite a idade da pessoa:"))
+    altura = int(input("Digite a altura da pessoa:"))
+    totalidade += idade
+    totalaltura += altura
+    quantidade += 1
+    print("Pessoa cadastrada com sucesso!")
+
+elif opcao == 2:
+    if quantidade == 0:
+        print("Nenhuma pessoa cadastrada ainda")
+    else:
+        mediaidade = totalidade / quantidade
+        mediaaltura = totalaltura / quantidade
+        print("Media parcial de idade:", mediaidade, "Media parcial de altura:", mediaaltura)
+
+elif opcao == 3:
+    if quantidade == 0:
+        print("Nenhuma pessoa cadastrada ainda")
+    else:
+        print("Saída concluida com sucesso!")
+break
